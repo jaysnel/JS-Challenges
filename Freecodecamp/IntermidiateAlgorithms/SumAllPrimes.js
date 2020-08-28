@@ -12,7 +12,7 @@ function sumPrimes(num) {
   });
   //check if isPrime function
   function isPrime(value) {
-    for(var i = 2; i < value; i++) {
+    for(let i = 2; i < value; i++) {
         if(value % i === 0) {
             return false;
         }
