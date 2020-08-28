@@ -4,12 +4,9 @@ function sumPrimes(num) {
 
   //push first array which are all values that I need
   for(let i = 1; i <= num; i++) {
-    arr.push(i);
+    //check to see if prime number, if it is, push to arry
+    if(isPrime(i)) primeArr.push(i);
   }
-  //check to see if prime number, if it is, push to arry
-  arr.forEach(el => {
-    if(isPrime(el)) primeArr.push(el);
-  });
   //check if isPrime function
   function isPrime(value) {
     for(let i = 2; i < value; i++) {
